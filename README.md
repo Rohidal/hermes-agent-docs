@@ -27,7 +27,11 @@ Dokumentasi lengkap **8 file** (~124 KB, 6000+ baris) yang mencakup:
 ### 1. Install Hermes Agent
 
 ```bash
-pip install hermes-agent
+# Linux / macOS / WSL2
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# Windows PowerShell
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
 ```
 
 ### 2. Setup (5 menit)

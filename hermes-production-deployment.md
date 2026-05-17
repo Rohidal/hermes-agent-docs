@@ -96,8 +96,8 @@ sudo usermod -aG sudo hermes
 sudo mkdir -p /opt/hermes
 sudo chown hermes:hermes /opt/hermes
 
-# Install Hermes Agent
-sudo -u hermes pip3 install hermes-agent
+# Install Hermes Agent (official installer)
+sudo -u hermes bash -c 'curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash'
 
 echo "Server setup complete!"
 ```
@@ -334,8 +334,8 @@ RUN apt-get update && apt-get install -y \
 # Create app user
 RUN useradd -m -u 1000 hermes
 
-# Install Hermes Agent
-RUN pip install --no-cache-dir hermes-agent
+# Install Hermes Agent (official installer)
+RUN curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
 
 # Create directories
 RUN mkdir -p /home/hermes/.hermes /home/hermes/.agent/credentials

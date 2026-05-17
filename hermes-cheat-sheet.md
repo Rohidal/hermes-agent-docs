@@ -5,8 +5,11 @@ Quick reference untuk command-command penting. Print atau bookmark halaman ini!
 ## Installation & Setup
 
 ```bash
-# Install
-pip install hermes-agent
+# Install (Linux / macOS / WSL2)
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# Install (Windows PowerShell)
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
 
 # Setup wizard
 hermes setup

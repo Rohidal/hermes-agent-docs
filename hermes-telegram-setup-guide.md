@@ -12,31 +12,20 @@ Complete guide to install Hermes Agent and connect it to Telegram for autonomous
 
 ## Part 1: Install Hermes Agent
 
-### 1.1 Install via pip
+### 1.1 Install via official installer
 
 ```bash
-# Install Hermes Agent
-pip install hermes-agent
+# Linux / macOS / WSL2
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# Windows PowerShell
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
 
 # Verify installation
 hermes --version
 ```
 
-### 1.2 Alternative: Install from source
-
-```bash
-# Clone repository
-git clone https://github.com/NousResearch/hermes-agent.git
-cd hermes-agent
-
-# Install dependencies
-pip install -e .
-
-# Verify
-hermes --version
-```
-
-### 1.3 Initial setup
+### 1.2 Initial setup
 
 ```bash
 # Run setup wizard
@@ -526,8 +515,11 @@ See documentation: https://hermes-agent.nousresearch.com/docs
 ## Quick Reference Card
 
 ```bash
-# Installation
-pip install hermes-agent
+# Installation (Linux / macOS / WSL2)
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# Installation (Windows PowerShell)
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
 
 # Setup
 hermes setup

@@ -5,8 +5,11 @@ Get your AI agent running in 5 minutes. Perfect for beginners.
 ## Step 1: Install Hermes (1 minute)
 
 ```bash
-# Install via pip
-pip install hermes-agent
+# Linux / macOS / WSL2
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# Windows PowerShell
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
 
 # Verify installation
 hermes --version
